@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1100.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exameninterfaces.controller.MainViewController">
+    <top>
+        <GridPane prefHeight="80.0" prefWidth="1098.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="68.0" prefWidth="212.0" style="-fx-color: red;" text="CLIENTES" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <font>
+                        <Font name="Corbel Bold" size="48.0" />
+                    </font>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </GridPane>
+    </top>
+    <center>
+        <GridPane alignment="CENTER" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <Label text="Nombre del Cliente">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtNombre" style="-fx-border-color: black;" GridPane.columnIndex="1">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce el nombre del cliente" />
+            </tooltip>
+            </TextField>
+            <Label text="Sexo" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtSexo" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce el sexo del cliente" />
+            </tooltip>
+            </TextField>
+            <Label text="Peso" GridPane.rowIndex="2">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtPeso" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce el peso del cliente" />
+            </tooltip>
+            </TextField>
+            <Label text="Edad" GridPane.rowIndex="3">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtEdad" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce la edad del cliente" />
+            </tooltip>
+            </TextField>
+            <Label text="Talla" GridPane.rowIndex="4">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtTalla" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce la talla del cliente" />
+            </tooltip>
+            </TextField>
+            <Label text="Tipo de Actividad" GridPane.rowIndex="5">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtTipoActividad" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce el tipo de actividad del cliente" />
+            </tooltip>
+            </TextField>
+            <Label text="Observaciones" GridPane.rowIndex="6">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txtObservaciones" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            <tooltip>
+               <Tooltip text="Introduce las observaciones del cliente" />
+            </tooltip>
+            </TextField>
+        </GridPane>
+    </center>
+    <bottom>
+        <GridPane prefWidth="796.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="891.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="891.0" minWidth="10.0" prefWidth="178.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="891.0" minWidth="10.0" prefWidth="215.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="891.0" minWidth="10.0" prefWidth="165.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="btnGuardar" alignment="CENTER" mnemonicParsing="false" onAction="#guardar" style="-fx-border-color: black; -fx-background-color: lightgreen;" text="Guardar" GridPane.halignment="LEFT">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+                </Button>
+                <Button fx:id="btnSalir" alignment="CENTER" mnemonicParsing="false" onAction="#salir" prefHeight="41.0" prefWidth="98.0" style="-fx-border-color: black; -fx-background-color: red;" text="Salir" GridPane.columnIndex="3" GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="btnDescargar" mnemonicParsing="false" onAction="#descargar" prefHeight="41.0" prefWidth="129.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Descargar" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="metabolismo" style="-fx-background-color: lightblue;" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="50.0" left="270.0" right="50.0" top="50.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </bottom>
+</BorderPane>
